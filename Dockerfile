@@ -15,6 +15,7 @@ RUN apk add --no-cache \
     unzip \
     poppler-utils \
     linux-headers \
+    postgresql-dev \
     $PHPIZE_DEPS
 
 # Configure and install PHP extensions
@@ -22,7 +23,7 @@ RUN docker-php-ext-configure intl \
     && docker-php-ext-install intl \
     && docker-php-ext-configure zip \
     && docker-php-ext-install zip \
-    && docker-php-ext-install pdo_mysql mbstring exif pcntl bcmath gd opcache
+    && docker-php-ext-install pdo_mysql pdo_pgsql pgsql mbstring exif pcntl bcmath gd opcache
 
 # Install Redis extension
 RUN pecl install redis \
