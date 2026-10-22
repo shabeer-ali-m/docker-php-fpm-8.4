@@ -2,7 +2,7 @@
 
 This repository provides a lightweight **PHP 8.4 FPM Docker image based on Alpine Linux** with commonly used extensions and tools for modern PHP applications (Laravel, Symfony, WordPress, custom apps, etc.).
 
-The image is optimized for development and production environments and includes database drivers, Redis support, and Composer.
+The image is optimized for development and production environments and includes database drivers, Redis support, and Composer
 
 ---
 
